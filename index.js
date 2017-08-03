@@ -17,11 +17,11 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'serve',
   masterKey: process.env.MASTER_KEY || 'abcdefg', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://damp-earth-64969.herokuapp.com/parse',  // Don't forget to change to https if needed
-  
+
   push: {
     ios: [
       {
-        cert: '/Users/mikeyevander/Documents/certBundle.p7b',
+        pfx: 'cert.p12',
         bundleId: 'com.Hamlett.Serve',
         production: false
       }
