@@ -18,11 +18,13 @@ var api = new ParseServer({
   masterKey: process.env.MASTER_KEY || 'abcdefg', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://damp-earth-64969.herokuapp.com/parse',
   push : {
-    ios : {
-      pfx: 'cert.p12'
-      bundleId: 'com.Hamlett.Serve'
-      production: false
-    }
+    ios : [
+      {
+        pfx: 'cert.p12'
+        bundleId: 'com.Hamlett.Serve'
+        production: false
+      }
+    ]
   },
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
