@@ -21,6 +21,7 @@ var api = new ParseServer({
     ios : [
       {
         pfx: 'cert.p12',
+        passphrase: 'Lilpepper2!',
         bundleId: 'com.Hamlett.Serve',
         production: false
       }
