@@ -8,7 +8,8 @@ Parse.Push.send({
     "deviceType": "ios"
   },
   "data" : {
-    "alert": "Breaking News!",
+    "push_time" : "2017-08-03 15:28:00",
+    "alert": "3:25 boiii",
      "sound": "default"
   }
 }, { useMasterKey: true}).then(() => {
