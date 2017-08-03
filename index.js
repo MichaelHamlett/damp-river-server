@@ -20,8 +20,8 @@ var api = new ParseServer({
   push : {
     ios : [
       {
-        pfx: 'cert.p12'
-        bundleId: 'com.Hamlett.Serve'
+        pfx: 'cert.p12',
+        bundleId: 'com.Hamlett.Serve',
         production: false
       }
     ]
