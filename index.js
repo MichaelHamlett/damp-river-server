@@ -24,6 +24,12 @@ var api = new ParseServer({
         passphrase: 'Lilpepper2!',
         bundleId: 'com.Hamlett.Serve',
         production: false
+      },
+      {
+        pfx: 'cert.p12',
+        passphrase: 'Lilpepper2!',
+        bundleId: 'com.Olga.Serve',
+        production: false
       }
     ]
   },
