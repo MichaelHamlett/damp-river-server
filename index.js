@@ -22,13 +22,13 @@ var api = new ParseServer({
       {
         pfx: 'cert.p12',
         passphrase: 'Lilpepper2!',
-        bundleId: 'com.Hamlett.Serve',
+        topic: 'com.Hamlett.Serve',
         production: false
       },
       {
         pfx: 'cert.p12',
         passphrase: 'Lilpepper2!',
-        bundleId: 'com.Olga.Serve',
+        topic: 'com.Olga.Serve',
         production: false
       }
     ]
