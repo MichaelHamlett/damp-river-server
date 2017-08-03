@@ -3,7 +3,7 @@ Parse.Cloud.define('hello', function(req, res) {
   res.success('Hi');
 });
 
-Parse.push.send({
+Parse.Push.send({
   where: {
     "deviceType": "ios"
   },
