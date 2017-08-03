@@ -7,9 +7,9 @@ Parse.Push.send({
   where: {
     "deviceType": "ios"
   },
+  "push_time" : "2017-08-03 15:29:00",
   "data" : {
-    "push_time" : "2017-08-03 15:28:00",
-    "alert": "3:25 boiii",
+    "alert": "3:29 boiii",
      "sound": "default"
   }
 }, { useMasterKey: true}).then(() => {
