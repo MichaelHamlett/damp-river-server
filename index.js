@@ -21,7 +21,7 @@ var api = new ParseServer({
   push: {
     ios: [
       {
-        pfx: '/Users/mikeyevander/Documents/certBundle.p7b',
+        cert: '/Users/mikeyevander/Documents/certBundle.p7b',
         bundleId: 'com.Hamlett.Serve',
         production: false
       }
