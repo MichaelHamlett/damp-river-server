@@ -5,14 +5,14 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 
-var databaseUri = 'mongodb://<dbuser>:<dbpassword>@ds111622.mlab.com:11622/serve';
+var databaseUri = 'mongodb://mike:pass@ds111622.mlab.com:11622/serve';
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://<dbuser>:<dbpassword>@ds111622.mlab.com:11622/serve',
+  databaseURI: databaseUri || 'mongodb://mike:pass@ds111622.mlab.com:11622/serve',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'serve',
   masterKey: process.env.MASTER_KEY || 'abcdefg', //Add your master key here. Keep it secret!
